@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
+$font-stack: "Noto Sans","Noto Sans CJK SC Light","Microsoft YaHei",sans-serif;
+$cssa-red: #CC3300;
+$cssa-gray: #eee;
+
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
+.col-red{ background-color: $cssa-red; }
+
+.navbar {
+    -webkit-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+    
+    .active{
+        pointer-events: none;
+    }
+}
+
+//===========
+
+.img-glyph{
+    max-height: 3em;
+    white-space: nowrap;
+    padding: 10px;
+}
+.col-text {
+    padding: 5% 0;
+}
+
+.flex {
+    display: flex;
+}
+.flex-center{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.line-fit{
+    width: 100%;
+    whitespace: nowrap;
+    text-align: justify;
+}
+
+//============
+
+#footer{
+    background-color: $cssa-gray;
+    $height: 200px;
+    
+//    h5{
+//        text-align: center;
+//        &:after {
+//            display:block;
+//            clear:both;
+//            content : "";
+//            position: relative;
+//            left : 0;
+//            bottom  : 0;
+//            max-width:250px;
+//            height  : 1px;
+//            width   : 65%;
+//            border-bottom:1px solid black;
+//            margin:0 auto;
+//            padding:2px 0px;
+//        }
+//    }
+   
+//    #carousel-ads{
+//        margin: auto;
+//        //TODO: breaks at ~1220 width for a little bit, otherwise fine
+//        @media only screen and (max-width: $screen-sm-max) {
+//            width: 70%;
+//        }
+//        @media only screen and (max-width: $screen-sm-min) {
+//            width: 80%;
+//        }
+//
+//        .carousel-control.left, .carousel-control.right {
+//            background-image: none
+//        }
+//        
+//        .carousel-inner{
+//            height: $height;
+//            
+//            background-color: white;
+//
+//            .item>img{
+//                max-width: inherit;
+//                max-height: $height;
+//                margin: auto;
+//            }
+//        }
+//    }
+  
+    #social{
+        .flex {
+            justify-content: center;
+            @media only screen and (max-width: $screen-sm-max) {
+                display: inherit;
+            }
+        }
+        #qr {
+            background: white;
+            border-radius: 5px;
+            padding: 8px;
+            max-width: 100px;
+        }
+
+    }
+    
+}

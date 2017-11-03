@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+.col-red {
+  background-color: #CC3300; }
+
+.navbar {
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2); }
+  .navbar .active {
+    pointer-events: none; }
+
+.img-glyph {
+  max-height: 3em;
+  white-space: nowrap;
+  padding: 10px; }
+
+.col-text {
+  padding: 5% 0; }
+
+.flex {
+  display: flex; }
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%; }
+
+.line-fit {
+  width: 100%;
+  whitespace: nowrap;
+  text-align: justify; }
+
+#footer {
+  background-color: #eee; }
+  #footer #social .flex {
+    justify-content: center; }
+    @media only screen and (max-width: 991px) {
+      #footer #social .flex {
+        display: inherit; } }
+  #footer #social #qr {
+    background: white;
+    border-radius: 5px;
+    padding: 8px;
+    max-width: 100px; }
+
+/*# sourceMappingURL=style.css.map */
