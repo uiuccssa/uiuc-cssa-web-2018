@@ -49,6 +49,12 @@ nav .navbar {
     margin: 12px 0;
 }
 
+.carousel-caption h1{
+    @media only screen and (max-width: $screen-sm-min) {
+        font-size: 20px;
+    } 
+}
+
 //===========
 
 .dark {
@@ -65,7 +71,7 @@ nav .navbar {
 .page-title{
     color: $cssa-red;
     margin-top: 0;
-    margin-bottom: 16*3px;
+    margin-bottom: 5vh;
 }
 
 .img-glyph{
