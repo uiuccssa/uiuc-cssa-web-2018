@@ -30,7 +30,7 @@
     "@font-size-h5": "@font-size-base",
     "@font-size-h6": "ceil((@font-size-base * 0.85))",
     "@line-height-base": "1.428571429",
-    "@line-height-computed": "floor((@font-size-base * @line-height-base))",
+    "@line-height-computed": "floor((@font-size-base * @line-height-base * 2))",
     "@headings-font-family": "inherit",
     "@headings-font-weight": "700",
     "@headings-line-height": "1.1",
@@ -416,5 +416,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "https://getbootstrap.com/docs/3.3/customize/?id=6a7ff64c03c6574ed423d801a17e2231"
+  "customizerUrl": "https://getbootstrap.com/docs/3.3/customize/?id=3bb826d4449227de2ed21842b09cd5b9"
 }
