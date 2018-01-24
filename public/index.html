@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+<!--    <link rel="stylesheet" type="text/css" href="assets/bootstrap-toggle.min.css">-->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -26,27 +28,51 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >Events <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#events/moon-gala">中秋晚会</a></li>
-                    <li><a href="#events/if-you-are-the-one">非诚勿扰</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#events/calendar">Events Calendar</a></li>
-                </ul>
-            </li>
-              <li><a href="http://uiuccssa.nodebb.com/">Forum</a></li>
-          </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Divisions<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#division/Board">Board</a></li>
+                        <li><a href="#division/文体部">文体</a></li>
+                        <li><a href="#division/本科生部">本科生</a></li>
+                        <li><a href="#division/学生事务部">学生事务</a></li>
+                        <li><a href="#division/外联部">外联</a></li>
+                        <li><a href="#division/人力资源部">人力资源</a></li>
+                        <li><a href="#division/宣传部">宣传</a></li>
+                        <li><a href="#division/研究生部">研究生</a></li>
+                        <li><a href="#division/职业发展部">职业发展</a></li>
+                        <li><a href="#division/IT部">IT</a></li>
+                        <li><a href="#division/JF乐团">JF乐团</a></li>
+                        <li><a href="#division/光子映画">光子映画</a></li>
+                        <li><a href="#division/香槟影楼">香槟影楼</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >Events <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#events/moon-gala">中秋晚会</a></li>
+                        <li><a href="#events/if-you-are-the-one">非诚勿扰</a></li>
+                        <li><a href="http://uiucidf.org">发展论坛</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#events/calendar">Events Calendar</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://uiuccssa.nodebb.com/">Forum</a></li>
+                <li>
+                    <button type="button" class="btn btn-default navbar-btn" style="height:30px; margin-top: 10px" id="translation">English</button>
+                </li>
+            </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
 
     <div id="body" w3-include-html=""></div>
-
+    
+    <div id="division_part" class="container"></div>
+    
 
     <div id="footer" class="dark">    
         <div class="container">
@@ -98,5 +124,8 @@
 
     <script src="assets/bootstrap.min.js"></script>
     <script src="assets/script.js"></script>
+    <script src="assets/jquery.csv.min.js"></script>
+<!--    <script src="assets/bootstrap-toggle.min.js"></script>-->
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 </body>
 </html>
