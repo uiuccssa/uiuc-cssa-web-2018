@@ -47,6 +47,8 @@ function setBody(name,href){
 function fillDivision(divsion_name) {
     var data;
     var divsion_csv = "image/" + "division/" + divsion_name + "/" + divsion_name + ".csv";
+    
+    // load csv file and given to data variable
     $.ajax({
         url: divsion_csv,
         async: false,
@@ -61,6 +63,7 @@ function fillDivision(divsion_name) {
     
     var num_member = data.length;
     
+    // append it to the division_part
     for (var i = 0; i < num_member; i++) {
         // each line has 3 thumbnail images
         // there definitely exist some other easy way to do it
@@ -94,6 +97,25 @@ function fillDivision(divsion_name) {
         
         $(target).append(img_html);
     }
+    
+    //create division title for current division page
+    $("#division_title").append("<h1></h1>");
+    $("#division_title > h1").text(divsion_name);
+    $("#division_title > h1").addClass("text-center");
+    $("#division_title > h1").css("color", "#CC3300");
+    
+    //create division info for current division page
+    var division_html = "division/" + divsion_name + ".html";
+    $.ajax({
+        url: division_html,
+        dataType: "html",
+        error: function() {
+            
+        },
+        success: function(data) {
+            $("#division_info").html(data);
+        }
+    })
 }
 
 /*
@@ -122,6 +144,8 @@ $(document).ready(function() {
         // make sure the other content is clear, since there is some change in href
         $("#body").empty();
         $("#division_part").empty();
+        $("#division_info").empty();
+        $("#division_title").empty();
         $("nav li").removeClass("active");
         
         // divsion act a bit different than the other page
