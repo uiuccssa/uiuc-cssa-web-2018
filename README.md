@@ -54,6 +54,10 @@ Controller(结构): jQuery **public/assets/script.js**
 
 ##### 修改导航/页脚内容
 修改index.html
+
+##### 如何做中英文的context
+网站的navbar上有一个button是做translation的，每次如果有中英版本的context，中文段落的class是chinese，英文的是english。
+再在段落的css里边加display：none或者display：block。详情参考about.html。
  
 ##### 修改UI
  1. [Have SaSS installed](http://sass-lang.com/install)
